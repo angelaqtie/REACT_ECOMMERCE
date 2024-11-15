@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-[clamp(35px,6vw,_50px)];
+  }
+  h2 {
+    @apply text-[clamp(30px,6vw,_40px)];
+  }
+  h3 {
+    @apply text-[clamp(25px,6vw,_30px)];
+  }
+  h4 {
+    @apply text-[clamp(28px,6vw,_25px)];
+  }
+  h5 {
+    @apply text-[clamp(16px,6vw,_20px)];
+  }
+  h6 {
+    @apply text-[clamp(12px,6vw,_16px)];
+  }
+  img {
+    @apply block;
+  }
+  ul {
+    @apply list-none;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+  body {
+    @apply leading-snug text-black;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1900px] mx-auto px-4;
+  }
+}
